@@ -16,5 +16,12 @@ run:
 run_d:
 	docker-compose up -d
 
+clean:
+	rm -rf ./venv;
+
+venv:
+	virtualenv ./venv -p /usr/bin/python3;
+
+
 # https://github.com/behollister/blender2.8
 # #./build_files/build_environment/install_deps.sh --with-all --no-confirm
